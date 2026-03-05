@@ -91,7 +91,7 @@ Modify the config data.params.main_spec_dir and  data.params.main_spec_dir.other
 ## train variational autoencoder
 Assume we have processed several datasets, and save the .tsv files in tsv_dir/*.tsv . Replace data.params.spec_dir_path with tsv_dir in the config file. Then we can train VAE with the following command. If you don't have 8 gpus in your machine, you can replace --gpus 0,1,...,gpu_nums
 ```
-python main.py --base configs/research/autoencoder/autoencoder1d_kl20_natbig_r1_down2_disc2.yaml -t --gpus 0,1,2,3,4,5,6,7
+python main.py --base configs/autoencoder1d_kl20_natbig_r1_down2_disc2.yaml -t --gpus 0,1,2,3,4,5,6,7
 ```
 
 ## train latent diffsuion
